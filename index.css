@@ -2,7 +2,7 @@
 			color: rgb(5, 5, 5);
 			font-family: 'Nunito Semibold';
 			text-align: justify;		}
-		#content{
+		#Grid{
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			grid-gap: 10px;
@@ -10,13 +10,15 @@
 			margin: 0 auto;
 			background-color: aliceblue;
 		}
-		#content > *{
+		#Grid > *{
 			padding: 10px;
 		}
 		header{
 			grid-column: span 3;
+			color: rgb(245, 214, 37);
 			background: #3bbced;
 			font-size: 3em;
+			font-weight: bold;
 			text-align: center;
 			}
 
@@ -31,14 +33,26 @@
 		}
 		
 		aside {
+			color: white;	
 			background-image: url(https://nykdaily.com/wp-content/uploads/2020/03/virus-4835301_1920.jpg);
 			grid-row: 2 / 2;
 			text-align: center;
 			max-width: 50%;
-
+		}
+		
+		aside h4 {
+			color: rgb(245, 214, 37);
 		}
 
-			footer{
+		aside p {
+			text-align: justify;
+			color: white;	
+			padding: 10px;
+		}
+
+		footer{
 			grid-column: span 3;
+			color: rgb(252, 13, 5);
 			background: #83e4f5;
+			text-align: center;
 		}
