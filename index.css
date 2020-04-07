@@ -1,7 +1,8 @@
 body{
-    color: #fff;
-    font-family: 'Nunito Semibold';
+    color: black;
+    font-family: 'halvetica Semibold';
     text-align: center;
+    
 }
 #content{
     display: grid;
@@ -13,17 +14,18 @@ body{
     margin: 0 auto;
 }
 #content > *{
-    background-color: turquoise;
+    background-color: aliceblue;
     padding: 10px;
 }
-.header{
-    grid-column: span 4;
-    background: #3bbced;
+.header {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .main{
     grid-column: 2 / 5;
     grid-row: 2 / 4;
     background: #e82b69;
+    
 }
 .aside, .article{
     grid-column: 1 / 2;
@@ -35,10 +37,9 @@ body{
 }
 .footer{
     grid-column: span 4;
-    background: #a56dda;
 }
 
-.one, .eleven {
+.header, .eleven {
     grid-column: 1/5;
 }
 
@@ -57,9 +58,10 @@ body{
     grid-row: 2/5;
 }
 
-.five {
+.aside {
     grid-column: 4/5;
     grid-row: 2/6;
+    color: black;
 }
 
 .seven {
@@ -75,4 +77,8 @@ body{
 .nine {
     grid-column: 3/4;
     grid-row: 5/7;
+}
+
+.ArticleText, .aside p {
+    text-align: justify;
 }
