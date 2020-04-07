@@ -17,30 +17,11 @@ body{
     background-color: aliceblue;
     padding: 10px;
 }
-.header {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-.main{
-    grid-column: 2 / 5;
-    grid-row: 2 / 4;
-    background: #e82b69;
-    
-}
-.aside, .article{
-    grid-column: 1 / 2;
-    background: #fac24a;
-}
-.nav{
-    grid-column: 1 / 2;
-    background: #8ae348;
-}
-.footer{
-    grid-column: span 4;
-}
 
 .header {
     grid-column: 1/5;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .article1 {
@@ -58,7 +39,7 @@ body{
     grid-row: 2/5;
 }
 
-.aside {
+.sidebar {
     grid-column: 4/5;
     grid-row: 2/6;
     color: black;
@@ -79,6 +60,11 @@ body{
     grid-row: 5/7;
 }
 
-.ArticleText, .aside p {
+.ArticleText, .sidebar p {
     text-align: justify;
 }
+
+.footer{
+    grid-column: span 4;
+}
+
