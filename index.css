@@ -39,21 +39,21 @@ body{
     grid-column: span 4;
 }
 
-.header, .eleven {
+.header {
     grid-column: 1/5;
 }
 
-.two {
+.article1 {
     grid-column: 1/2;
     grid-row: 2/5;
 }
 
-.three {
+.article2 {
     grid-column: 2/3;
     grid-row: 2/5;  
 }
 
-.four {
+.article3 {
     grid-column: 3/4;
     grid-row: 2/5;
 }
@@ -64,17 +64,17 @@ body{
     color: black;
 }
 
-.seven {
+.article4 {
     grid-column: 1/2;
     grid-row: 5/7;
 }
 
-.eight {
+.article5 {
     grid-column: 2/3;
     grid-row: 5/7;
 }
 
-.nine {
+.article6 {
     grid-column: 3/4;
     grid-row: 5/7;
 }
