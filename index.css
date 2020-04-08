@@ -3,7 +3,7 @@ body{
     font-family: 'halvetica Semibold';
     text-align: center;
 }
-#content{
+.content{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, minmax(100px, auto));
@@ -20,12 +20,13 @@ body{
 }
 
 
-#content > *{
+.content > *{
     background-color: aliceblue;
     padding: 10px;
 }
 
 .header {
+    color: rgb(245, 214, 37);
     grid-column: 1/5;
     grid-area: header;
     margin-top: 15px;
@@ -54,11 +55,16 @@ body{
     grid-column: 4/5;
     grid-row: 2/6;
     grid-area: sidebar;
+    background-color: tan;
     color: black;
 }
 
 .navbar {
     grid-area: navbar;
+    font-weight: bold;
+    padding-top: 35px;
+    color: #3bbced;
+    background-color: rgb(178, 225, 252);
 }
 
 
@@ -85,12 +91,13 @@ body{
 }
 
 .footer{
+    color: rgb(245, 214, 37);
     grid-column: span 4;
     grid-area: footer;
 }
 
 @media screen and (min-width: 220px){
-    #content{
+    .content{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, minmax(100px, auto));
@@ -112,7 +119,7 @@ body{
     }
     }
     @media screen and (min-width: 730px){
-        #content{
+        .content{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(4, minmax(100px, auto));
@@ -123,16 +130,17 @@ body{
             grid-template-areas: 
             "header header"
             "navbar navbar"
-            "article1 article2 "
-            "article3 article4 "
-            "article5 article6 "
+            "article1 article2"
+            "article3 article4"
+            "article5"
+            "article6"
             "sidebar sidebar "
             "footer footer";
         }
         }
 
         @media screen and (min-width: 1137px){
-            #content{
+            .content{
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 grid-template-rows: repeat(4, minmax(100px, auto));
@@ -144,14 +152,14 @@ body{
                 "header header header"
                 "navbar navbar navbar"
                 "article1 article2 article3"
-                "article4 article5 article6 "
-                "sidebar sidebar sidebar"
+                "article4 article5"
+                "article6 sidebar sidebar"
                 "footer footer footer";
             }
             }
 
             @media screen and (min-width: 1250px){
-                #content{
+                .content{
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
                     grid-template-rows: repeat(4, minmax(100px, auto));
